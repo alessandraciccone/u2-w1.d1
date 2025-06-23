@@ -1,0 +1,96 @@
+/* bisgona sempre ragionare mobilefirst!poi le pagine si devono adattare
+
+*/
+.box{
+    width: 300px;
+    height:300px;
+    border:2px,solid,black;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+nav ul{
+        margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 1em;
+    }
+nav a {
+    text-decoration: none;
+    color:black;
+
+}
+#first{ background-color: red;
+    
+   
+}
+#second{
+    background-color: blue;
+}
+
+img.responsive{
+    max-width:100%;
+    height:auto
+}
+
+/*man man che kla dimensione aumenta, possiamo usare le media queries x attivare o disattivare determinate porzioni di css
+stile tablet*/
+
+@media screen and (min-width: 768px)
+
+
+{
+    #first{background-color: aquamarine;
+    }
+
+    #second{
+        background-color:coral ;
+ 
+ 
+    }
+    li{
+        display: inline-block;
+        
+    }
+    nav{display: inline-block;
+        vertical-align: top;}
+
+        .box{
+              display: inline-block;
+
+
+  margin: 1%;
+  vertical-align: top;
+}
+
+section {
+  text-align: center; /* oppure left, se preferisci */
+  font-size: 0; /* elimina lo spazio tra inline-block */
+}
+
+
+        }
+
+
+
+/* partendo sempre dal piccolo si deve ragionare sempre in scala, con la min width. bisogna immaginar eil tablet come un dispositivo con uno schermo. questo blocco verrà aggiunto solo se il dispositivo usato è un tablet 
+stile laptop
+
+*/
+@media screen and (min-width:1080px){
+    #first{ background-color: black;}
+
+    #second{background-color: burlywood;}
+}
+
+/*si può ragionareanche cin orientation, cioè iondicare che lo schermo sia orizzontale.
+*/
+
+@media print{
+nav{display: none;}
+h1{display: none;}
+footer{display: none;}}
